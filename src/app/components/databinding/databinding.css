@@ -1,0 +1,9 @@
+.myColor
+{
+    color:red;
+}
+.one-line
+{
+    display: flex;
+    flex-direction: column;
+}

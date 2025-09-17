@@ -1,0 +1,17 @@
+<p>databinding works!</p>
+<p [class]="className">{{courseName}}</p>
+
+<div class="one-line">
+    <input type="text" value="{{courseName}}">
+    <input type="text" value="{{productPrice}}">
+    <input [type]="inputType" [max]="maxlength" [minLength]="minChar">
+    <select name="" id="" (change)="onCityChange()">
+        <option value="">Pune</option>
+        <option value="">Nagpur</option>
+        <option value="">Mumbai</option>
+    </select>
+    <input type="text" [(ngModel)]="courseName">
+</div>
+<button (click)="showWelcome()">Show message</button>
+<button (click)="changeCourse()">Change Course</button>
+
