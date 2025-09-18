@@ -1,0 +1,17 @@
+<p>att-directive works!</p>
+<div class="row">
+    <div class="col-6" [ngClass]="divClass()">
+        <h4 >
+            this is -{{divClass()}}
+        </h4>
+    </div>
+    <div class="col-6" [ngStyle]="{'color':divColor?'red':'green'}">
+        <h4>hello</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <button class="btn btn-danger" (click)="setClassName(`bg-danger`)"> Red </button>
+        <button class="btn btn-success" (click)="setClassName(`bg-success`)"> Green </button>
+    </div>
+</div>

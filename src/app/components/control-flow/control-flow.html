@@ -1,0 +1,82 @@
+<p>control-flow works!</p>
+<table>
+    <tr>
+        <td>
+            @if(isParaVisible)
+            {
+            <p>this is sample para</p>
+            }
+            @else {
+                <p>default para</p>
+            }
+        </td>
+        <td>
+            <button (click)="changeValue()">Show P</button>
+        </td>
+        <td>
+             <button class="btn btn-success" (click)="changeValue()">Hide P</button>
+        </td>
+        <td><p>
+            @if(month==='jan')
+            {
+                january
+            }
+            @else if(month==='feb')
+            {
+                febraury
+            }
+        @else if(month === 'mar'){
+            march
+        }
+        @else {wrong value}</p>
+        </td>
+        <td>
+            <input type="text" [(ngModel)]="month">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                @for(item of citList;track $index){
+                    <li>{{item}}</li>
+                }
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <select name="" id="">
+                @for(item of citList;track $index){
+                    <option value="">{{item}}</option>
+                }
+            </select>
+        </td>
+    </tr>
+   
+</table>
+<table>
+    <thead>
+        <tr>
+            <th>sr no</th>
+            <th>name</th>
+            <th>city</th>
+            <th>is active</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (item of students; track $index) 
+        {
+            <tr>
+                <td>{{$index+1}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.city}}</td>
+                @if(item.isActive){
+                <td>Active</td>}
+                @else{
+                    <td>Not Active</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

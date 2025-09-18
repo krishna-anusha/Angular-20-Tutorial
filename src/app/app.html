@@ -1,20 +1,35 @@
+<nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+<div class="container-fluid">
 
+  <!-- Links -->
+  <ul class="nav navbar-nav" style="visibility: visible;">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="admin">Admin</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="control-flow">ControlFlow</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="signal-ex">SignalEx</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="databinding">Databinding</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="attdirective">Attdirective</a>
+    </li>
+  </ul>
+</div>
+</nav>
 
 <table>
   
-    <tr>
-      <app-admin></app-admin>
-    </tr>
+    
     <tr>
       <app-user></app-user>
     </tr>
-    <tr>
-      <app-databinding></app-databinding>
-    </tr>
-    <tr>
-      <app-signal-ex></app-signal-ex>
-
-
-    </tr>
+   
+    
   
 </table>
+<router-outlet></router-outlet>
