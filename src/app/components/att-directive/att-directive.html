@@ -6,7 +6,17 @@
         </h4>
     </div>
     <div class="col-6" [ngStyle]="{'color':divColor?'red':'green'}">
-        <h4>hello</h4>
+        <h4>hello {{firstName | uppercase}}</h4>
+        <h4>hello {{firstName | lowercase}}</h4>
+        <h4>hello {{firstName | titlecase}}</h4>
+        <p>Original: {{ rollNumberList }}</p>
+<p>Sliced: {{ rollNumberList | slice:0:3 }}</p>
+<p>{{ studentObj }}</p>
+<p>{{ studentObj | json }}</p>
+<p>Original: {{ currentDate }}</p>
+<p>Formatted: {{ currentDate | date:'dd-MM-yyyy' }}</p>
+<p>Month Name: {{ currentDate | date:'dd-MMM-yyyy' }}</p>
+<p>Full Month: {{ currentDate | date:'dd-MMMM-yyyy' }}</p>
     </div>
 </div>
 <div class="row">

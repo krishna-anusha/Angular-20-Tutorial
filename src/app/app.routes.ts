@@ -5,6 +5,7 @@ import { SignalEx } from './components/signal-ex/signal-ex';
 import { Databinding } from './components/databinding/databinding';
 
 import { AttDirective } from './components/att-directive/att-directive';
+import { GetApi } from './components/get-api/get-api';
 
 export const routes: Routes = [
     {
@@ -28,6 +29,10 @@ export const routes: Routes = [
     {
         path:'attdirective',
         component:AttDirective
+    },
+    {
+        path:'getapi',
+        component:GetApi
     }
 
 ];

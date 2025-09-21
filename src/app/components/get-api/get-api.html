@@ -1,0 +1,26 @@
+<div class="col-4 table-responsive">
+    <table class="table tablebordere">
+        <thead>
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    phone
+                </th>
+                <th>user</th>
+                <th>website</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(item of userList;track $index){
+                <tr>
+                    <td>{{item.name}}</td>
+                    <td>{{item.phone}}</td>
+                    <td>{{item.user}}</td>
+                    <td>{{item.website}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
