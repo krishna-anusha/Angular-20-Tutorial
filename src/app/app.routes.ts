@@ -6,6 +6,7 @@ import { Databinding } from './components/databinding/databinding';
 
 import { AttDirective } from './components/att-directive/att-directive';
 import { GetApi } from './components/get-api/get-api';
+import { User } from './components/user/user';
 
 export const routes: Routes = [
     {
@@ -33,6 +34,10 @@ export const routes: Routes = [
     {
         path:'getapi',
         component:GetApi
+    },
+    {
+        path:'user',
+        component:User
     }
 
 ];
