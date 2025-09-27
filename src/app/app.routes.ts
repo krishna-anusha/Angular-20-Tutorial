@@ -7,6 +7,7 @@ import { Databinding } from './components/databinding/databinding';
 import { AttDirective } from './components/att-directive/att-directive';
 import { GetApi } from './components/get-api/get-api';
 import { User } from './components/user/user';
+import { ReactiveUser } from './components/reactive-user/reactive-user';
 
 export const routes: Routes = [
     {
@@ -38,6 +39,10 @@ export const routes: Routes = [
     {
         path:'user',
         component:User
+    },
+    {
+        path:'reactiveuser',
+        component:ReactiveUser
     }
 
 ];
